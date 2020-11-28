@@ -1,6 +1,6 @@
 (ns clojure.examples.date
-  (:gen-class)
-  (:import java.util.Date))
+  (:import java.util.Date)
+  (:gen-class))
 (defn date []
   (let [now (Date.)]
     (println (.toString now))))
