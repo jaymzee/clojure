@@ -7,4 +7,8 @@
                {:name "josie" :owner "dawn"  :kind "cow"}})
 (def personalities #{{:kind "cow" :personality "stoic"}
                      {:kind "horse" :personality "skittish"}})
+(println "join:")
 (pprint (set/join animals personalities))
+(println "project:")
+(pprint (set/project animals [:name :kind]))
+

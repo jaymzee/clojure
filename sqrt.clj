@@ -15,7 +15,7 @@
     (fn [x] (avg x (f x)))))
 (defn sqrt [x]
   (fixed-point (average-damp #(/ x %)) 1.0))
-(defn sqrt-trace [x, n]
+(defn sqrt-trace [x n]
   (take n (iterate (average-damp #(/ x %)) 1.0)))
 (println (sqrt 2.0))
 (println (sqrt-trace 2.0 5))
